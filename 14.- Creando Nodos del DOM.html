@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="uno"></div>
+	<h1 id="titulo">Titulo de nuestro sitio Web</h1>
+
+	<p>1.- Lorem Ipsum adalah text contoh digunakan didalam industri pencetakan dan typesetting</p>
+
+	<p id="segundo">2.- Lorem Ipsum  contoh adalah text digunakan didalam industri pencetakan dan typesetting</p>
+
+<script type="text/javascript">
+	
+	//1. Crear el elemento
+	var elemento = document.createElement("h1");
+	//2. Crear un nodo de texto
+	var nodoTexto = document.createTextNode("Este es un nodo de texto");
+	//3. Añadir el nodo de texto al elemento
+	elemento.appendChild(nodoTexto);
+	//4. Agregar atributos al elemento
+	elemento.setAttribute("align","right");
+	//5. Agregar el elemento al documento
+	document.getElementById("uno").appendChild(elemento);
+
+</script>
+</body>
+</html>
