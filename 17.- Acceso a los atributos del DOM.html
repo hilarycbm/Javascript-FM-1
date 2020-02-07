@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Acceso a los atrobutos de DOM</title>
+	<style type="text/css">
+		div{
+			height: 50px;
+			width: 50px;
+		    border: 1px solid #AAAAAA;
+			background: pink;
+
+		}
+
+		.azul{
+			background: blue;
+		}
+		.rojo{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+<section id="section1">
+	<a href="https://www.youtube.com/watch?v=jVYq32sqoXo&list=PLhSj3UTs2_yVC0iaCGf16glrrfXuiSd0G&index=17" id="enlace">enlace</a>
+	<div class=""></div>
+	<div class=""></div>
+</section>
+
+<script type="text/javascript">
+	var elemento = document.createElement("div");
+	elemento.setAttribute("class","azul");
+	var padre = document.getElementById("section1");
+	padre.appendChild(elemento);
+	var referencia = document.getElementsByTagName("div")[1];
+	padre.insertBefore(elemento, referencia);
+
+	//cambiamos el color al div
+	elemento.setAttribute("class", "rojo")
+	//mostrar enlace
+	var enlace1= document.getElementById("enlace").href;
+	document.write(enlace1);
+
+	//mostrar id
+	var id1=document.getElementById("enlace").id;
+	document.write(id1);
+</script>
+</body>
+</html>
