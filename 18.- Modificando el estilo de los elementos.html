@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.titulo{
+			border: 1px solid green;
+			background: #ccc;
+			padding: 10px;
+		}
+		.tituloGrande{
+			font-size: 60px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="encabezado">Soy un encabezado ^-^</h1>
+
+<script type="text/javascript">
+	var encabezado1 = document.getElementById("encabezado");
+	encabezado1.className="titulo tituloGrande";
+	encabezado1.style.color="blue";
+	encabezado1.style.fontSize = "80px";
+	encabezado1.style.fontFamily = "Arial";
+	//QUITAR UNA CLASE
+	encabezado1.className = encabezado1.className.replace("titulo","");
+</script>
+</body>
+</html>
