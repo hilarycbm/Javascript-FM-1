@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		.thumb{
+			width: 200px;
+			transition: 300ms all ease;
+		}
+		.grande{
+			width: 400px;
+			transition: 300ms all ease;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="">
+		<input type="button" value="Cambio de medida" onclick="zoom();">
+	</form>
+
+	<img id="thumb" class="thumb" src="https://i.pinimg.com/originals/c4/76/27/c476278504682e622fabe9b0932098c3.jpg" width="400px" >
+
+	<script type="text/javascript">
+	function zoom(){
+		var thumb = document.getElementById("thumb");
+
+		if(thumb.className == "thumb"){
+			thumb.className = "grande"
+		}
+		
+		else{
+			thumb.className = "thumb";
+		}
+
+		
+		}
+	</script>
+		
+</body>
+</html>
