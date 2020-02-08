@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<button id="boton">Evento JS</button>
+		<p id="copiado">copiar</p>
+	</form>
+	<a id="boton"href="https://www.google.com/?hl=es_419"></a>
+
+<script type="text/javascript">
+
+	function saludo(e){
+		alert("SALUDO CON CLICK");
+		e.preventDefault();
+	};
+	function copiado1(e){
+		alert("Elemento copiado" + e.type);
+	};
+	//ONCLICK
+	var boton = document.getElementById("boton");
+	boton.addEventListener("click",saludo);
+	//COPY
+	var boton = document.getElementById("copiado");
+	boton.addEventListener("copy",copiado1);
+	//ELIMINAR EVENTO
+	boton.removeEventListener("click", saludo);
+
+</script>
+
+</body>
+</html>
