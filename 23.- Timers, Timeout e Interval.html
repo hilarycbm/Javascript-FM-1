@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var contador = 0;
+	
+	(function(){
+	var saludo = function(){
+		document.write("saludo");
+		contador ++;
+
+		if(contador==10){
+			clearInterval(intervalo);
+
+		}
+	}
+	//TIMEOUT
+	//setTimeout(saludo,3000);
+
+	//INTERVAL
+	var intervalo = setInterval(saludo,3000);
+	}())	
+
+	
+</script>
+
+</body>
+</html>
