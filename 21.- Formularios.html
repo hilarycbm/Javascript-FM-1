@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="" name="formulario" method="get">
+		<input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre: "><br>
+		<input type="radio" name="sexo" id="hombre" value="Hombre">Hombre
+		<input type="radio" name="sexo" id="mujer" value="Mujer">Mujer <br>
+
+		<input type="checkbox" name="terminos" id="terminos">Terminos y condiciones <br>
+	</form>
+
+	<script type="text/javascript">
+		//extraer el valor del campo nombre
+		document.formulario.nombre.value
+		//redirigir el cam´po al foco
+		document.formulario.nombre.focus()
+	</script>
+</body>
+</html>
